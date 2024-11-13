@@ -6,9 +6,9 @@ Creating a end to end course selling app using react,express,mongodb
 ## Create a course selling app
 
 ﻿﻿Initialize a new Node.is project
-﻿﻿Add Express, jsonwebtoken to it as a dependency
+﻿﻿Add Express, jsonwebtoken, mongoose to it as a dependency
 ﻿﻿Create index. is
-﻿﻿Add route skeleton for user login, signup, purchase a course, see course
+﻿﻿Add route skeleton for user login, signup, purchase a course, see all courses sees the purchased courses
 ﻿﻿Add routes for admin login, admin signup, create a course, delete a course, add course content
 ﻿﻿Add middlewares for user and admin auth
 ﻿﻿Add a database (mongodb), use doten to store the database connection string
