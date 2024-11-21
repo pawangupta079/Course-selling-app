@@ -1,5 +1,5 @@
 
-function createUserRouts(express){
+function createUserRouts(app){
 
 app.post("/user/signup", function(req, res){
     res.json({
