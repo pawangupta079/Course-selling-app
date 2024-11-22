@@ -3,7 +3,7 @@ mongoose.connect("mongodb+srv://pg777869:jsatkGnSfER0VU9d@cluster0.ybfgd.mongodb
 // const Schema = mongoose.Schema;
 // const ObjectId=mongoose.Types.ObjectId;
 
-// User Schema
+// User Schema...
 const userSchema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
@@ -12,7 +12,7 @@ const userSchema = new Schema({
   enrolledCourses: [{ type: Schema.Types.ObjectId, ref: "Course" }], // References Course
 }, { timestamps: true });
 
-// Admin Schema
+// Admin Schema...
 const adminSchema = new Schema({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
@@ -20,7 +20,7 @@ const adminSchema = new Schema({
   role: { type: String, enum: ["admin"], default: "admin" },
 }, { timestamps: true });
 
-// Course Schema
+// Course Schema...
 const courseSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
@@ -29,7 +29,7 @@ const courseSchema = new Schema({
   content: [{ title: String, videoUrl: String }], // Course content with videos
 }, { timestamps: true });
 
-// Purchase Schema
+// Purchase Schema ...
 const purchaseSchema = new Schema({
   user: { type: Schema.Types.ObjectId, ref: "User", required: true }, // References User
   course: { type: Schema.Types.ObjectId, ref: "Course", required: true }, // References Course
