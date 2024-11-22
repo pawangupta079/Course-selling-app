@@ -42,7 +42,7 @@ const UserModel = mongoose.model("User", userSchema);
 const AdminModel = mongoose.model("Admin", adminSchema);
 const CourseModel = mongoose.model("Course", courseSchema);
 const PurchaseModel = mongoose.model("Purchase", purchaseSchema);
-
+// expporting
 module.export = {
   UserModel,
   AdminModel,
