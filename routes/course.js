@@ -1,18 +1,19 @@
 const { Router } = require("express");
-const courseRouter=Router();
+const courseRouter = Router();
 
-courseRouter.post("/purchase", function(req, res){
-        res.json({
-            message: "signup endpoint"
-        })
-})
+// Endpoint to handle course purchases
+courseRouter.post("/purchase", function (req, res) {
+    res.json({
+        message: "Course purchase endpoint"
+    });
+});
 
-    courseRouter.get('/preview',function (req , res){
-        res.json({
-            message:"Hello Pawan Bhiya"
-    })
-})
+// Endpoint to preview a course
+courseRouter.get("/preview", function (req, res) {
+    res.json({
+        message: "Hello Pawan Bhiya"
+    });
+});
 
-module.exports{
-    courseRouter:courseRouter
-}
+// Export the router
+module.exports = courseRouter;
