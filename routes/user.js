@@ -1,25 +1,13 @@
+const express = require("express");
+const router = express.Router();
 
-function createUserRouts(app){
+// Define routes
+router.get("/", (req, res) => {
+  res.send("User Home Route");
+});
 
-app.post("/user/signup", function(req, res){
-    res.json({
-        message: "signup endpoint"
-    })
-})
+router.post("/register", (req, res) => {
+  res.send("User Registration Route");
+});
 
-app.get("/user/signin", function(req, res){
-    res.json({
-        message: "signin endpoint"
-    })
-})
-
-app.get("/user/purchases", function(req, res){
-    res.json({
-        message: "signup endpoint"
-    })
-})
-}
-
-module.exports={
-    createUserRouts:createUserRouts
-}
+module.exports = router; // Export the router object
